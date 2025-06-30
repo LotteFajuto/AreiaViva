@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Histórias Reais</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="galeria.html">Cartões Postais</a></li>
+        <li><a href="historias.html" class="active">Histórias Reais</a></li>
+        <li><a href="about.html">Sobre</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="galeria-a3">
+    <div class="container">
+      <h2>Histórias Pintadas</h2>
+      <p class="descricao-a3">Estes cartões maiores contam histórias reais de mulheres que vivem da praia. Cada imagem representa um fragmento da luta, da beleza e da força que move o cotidiano das nossas personagens.</p>
+  
+<div class="grid-a3">
+  <!-- Cartão da Carol -->
+  <div class="cartao-a3">
+    <a href="#historia1">
+      <img src="imagens/a3-1.jpg" alt="Cartão A3 - Carol">
+    </a>
+    <p class="legenda">Carol e sua barraca na Praia do Flamengo.</p>
+    <div class="poema-box">
+      <button class="toggle-btn" onclick="togglePoema(this)">Clique para ler o poema</button>
+      <div class="poema">
+        <p><strong>Da Mãe à Minha Própria História</strong></p>
+        <p>
+          Há mais de dez anos na correria,<br>
+          Com sol na cara, cabelos à ventania.<br>
+          Comecei com a mãe na batalha,<br>
+          Guerreira, imbatível como uma muralha.
+        </p>
+        <p>
+          Na barraca tem de tudo um pouco:<br>
+          Cadeira, guarda-sol, água de coco.<br>
+          Hoje já tenho minha barraca própria,<br>
+          Marcando cada vez mais a minha história.
+        </p>
+        <p>
+          Flamengo é meu lugar, meu chão,<br>
+          Pra aguentar, tem que ter coração.<br>
+          Não é fácil, mas tem que amar,<br>
+          A rotina do sol, do vento e do mar.
+        </p>
+        <p>
+          Me chamo Carol,<br>
+          Brilho tanto quanto o sol.<br>
+          Carrego no braço o peso da vida,<br>
+          Mais uma batalha vencida no dia.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cartão da Mari -->
+  <div class="cartao-a3">
+    <a href="#historia2">
+      <img src="imagens/a3-2.jpg" alt="Cartão A3 - Mulher 2">
+    </a>
+    <p class="legenda">Mari e sua Choppeira.</p>
+    <div class="poema-box">
+      <button class="toggle-btn" onclick="togglePoema(this)">Clique para ler o poema</button>
+      <div class="poema">
+        <p><strong>Turista nas horas vagas</strong></p>
+        <p>
+          De Bangu a Copacabana,<br>
+          começa a história da mais nova empreendedora<br>
+          que encontrou um caminho nessa vida urbana<br>
+          e enche o peito pra falar que é vendedora.
+        </p>
+        <p>
+          Na praia encontrou uma oportunidade:<br>
+          trazer o chopp mais pra perto dos turistas.<br>
+          Ela ganha o cliente com mais do que felicidade,<br>
+          é uma mulher artista, que tudo que quer conquista.
+        </p>
+        <p>
+          Dona do próprio verão,<br>
+          Uma mulher de grande paixão.<br>
+          Fez de seus hobbies a sua vida,<br>
+          encontrou a oportunidade mais divertida.
+        </p>
+        <p>
+          Seu negócio apareceu até na televisão,<br>
+          Mari sorri com brilho e dedicação.<br>
+          Quando ela fala, é pura emoção,<br>
+          traz no olhar sol, trabalho e paixão.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+<script>
+  function togglePoema(button) {
+    const poema = button.nextElementSibling;
+    poema.classList.toggle('mostrar');
+
+    if (poema.classList.contains('mostrar')) {
+      button.textContent = 'Ocultar poema';
+    } else {
+      button.textContent = 'Clique para ler o poema';
+    }
+  }
+</script>
+
+
+
+
+
+  <!-- INTRODUÇÃO DAS HISTÓRIAS -->
+  <section class="intro-historistas">
+    <div class="container">
+      <h1>Histórias Reais</h1>
+      <p>Conheça a história de mulheres que vivem da praia, resistem com criatividade e inspiram com suas trajetórias de luta e trabalho.</p>
+    </div>
+  </section>
+  
+  <!-- HISTÓRIA 1 -->
+  <section class="historista" id="historia1">
+    <div class="historia-container">
+      <div class="historia-foto">
+        <img src="imagens/carol.jpeg" alt="Foto da Carol" />
+      </div>
+      <div class="historia-texto">
+        <h2>Carol, 30 anos – Praia do Flamengo</h2>
+        <p>Carol é mãe de uma menina de 6 anos e trabalha há mais de 11 anos como barraqueira na Praia do Flamengo. Aluga cadeiras, guarda-sóis e vende bebidas geladas sob o sol escaldante. Sua maior dificuldade, como mulher, é carregar sozinha o peso de todo o material. Começou ajudando na barraca da mãe em Ipanema, até conseguir montar a própria estrutura. Com orgulho, ela diz: “Praia não é pra qualquer pessoa. Tem que gostar do que faz! Os pés queimando na areia extremamente quente, exposição ao sol. Tem que ter muita disposição, porque não é algo fácil.”</p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- HISTÓRIA 2 -->
+  <section class="historista" id="historia2">
+    <div class="historia-container">
+      <div class="historia-foto">
+        <img src="imagens/mari.jpg" alt="Foto da Mari" />
+      </div>
+      <div class="historia-texto">
+        <h2>Mari, 23 anos – Copacabana</h2>
+        <p>Maryana Maciel Veiga da Silva, moradora de Bangu, é apaixonada pela cidade, pela praia e por conversar com turistas. Com espírito empreendedor e muitos hobbies, ela viu na venda de chope artesanal uma oportunidade — e decidiu agarrá-la com a coragem de quem diz “agora ou nunca”. Começou sua jornada em 17 de janeiro, com sol no céu e determinação no peito.
+
+Desde então, Mari comanda seu próprio negócio em Copacabana, atuando entre os postos 5 e 6. Trabalha de quinta a terça quando o tempo permite, cuidando de tudo: da limpeza da chopeira (que pesa cerca de 85kg) à comunicação nas redes, passando pelo atendimento direto aos clientes com seu megafone e muito carisma.
+
+Ela se orgulha de mostrar que o que vende é mais do que um produto — é experiência, afeto e qualidade. Já saiu até na televisão e se tornou referência entre banhistas e turistas, especialmente por sua alegria contagiante e defesa dos pequenos produtores de chope artesanal.
+
+Mari também lida com os desafios de ser mulher empreendedora na praia — enfrentando o machismo, o preconceito e a desvalorização. Mesmo assim, mantém o coração aberto, defende a comunidade de trabalhadores da praia e sonha com um público mais curioso e disposto a experimentar coisas novas. </div>
+    </div>
+  </section>
+  
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagens/puc-rio-logo.png" alt="Logo PUC-Rio">
+      </div>
+      <div class="footer-info">
+        <p>Projeto acadêmico desenvolvido por [Seu Nome]</p>
+        <p>Curso de Design – PUC-Rio – 2025</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

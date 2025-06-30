@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meu Projeto - Landing Page</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="galeria.html">Cartões Postais</a></li>
+      <li><a href="historias.html">Histórias Reais</a></li>
+      <li><a href="about.html">Sobre</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Areia Viva</h1>
+    <p>A resistência silenciosa do trabalho informal.</p>
+    <div class="buttons">
+      <a href="galeria.html" class="btn">Ver Cartões</a>
+      <a href="historias.html" class="btn alt">Ler Histórias</a>
+    </div>
+  </div>
+</section>
+
+<section class="sobre">
+  <div class="container">
+    <h2>Sobre o Projeto</h2>
+    <p>
+      Este projeto mergulha na vida dos ambulantes de praia através de imagens, palavras e histórias. 
+      Cada cartão postal é um fragmento poético de quem vive o calor, o barulho e a beleza da rua todos os dias.
+    </p>
+    <p>
+      Através da arte e da observação sensível, convidamos você a conhecer, valorizar e refletir sobre esses personagens fundamentais da paisagem urbana brasileira.
+    </p>
+  </div>
+</section>
+
+<section class="preview-historias">
+  <h2>Histórias de mulheres Ambulantes</h2>
+  <div class="historias-grid">
+    <div class="historia">
+      <img src="imagens/carol.jpeg" alt="Carol">
+      <p><strong>Carol:</strong> trabalha há mais de 11 anos na Praia do Flamengo. Mãe solo e dona de barraca, enfrenta o peso dos materiais e o calor intenso com muita garra.</p>
+    </div>
+    <div class="historia">
+      <img src="imagens/mari.jpg" alt="Mari">
+      <p><strong>Mari:</strong> empreende nas praias, com muito orgulho de ser chefe do seu próprio trabalho.</p>
+    </div>
+  </div>
+  <div class="btn-container">
+    <a href="historias.html" class="btn alt">Ver todas as histórias</a>
+  </div>
+</section>
+
+
+
+<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" id="topBtn" title="Voltar ao topo">↑</button>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="imagens/puc-rio-logo.png" alt="Logo PUC-Rio">
+    </div>
+    <div class="footer-info">
+      <p>Projeto acadêmico desenvolvido por Ana Salles, Anna Mathias e Monique Ribeiro</p>
+      <p>Curso de Design – PUC-Rio – 2025</p>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
