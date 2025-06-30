@@ -1,15 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  createThumbnails();
-  selectCard(0);
 
+  const gallery = document.getElementById('gallery');
+  const previewImg = document.querySelector('#preview img');
+  const previewText = document.querySelector('.preview-text');
 
-
-const gallery = document.getElementById('gallery');
-const previewImg = document.querySelector('#preview img');
-const previewText = document.querySelector('.preview-text');
-
-const cards = [
-  {
+  const cards = [
+    {
     title: "Cartão 1",
     thumb: "imagens/1.jpg",
     full: "imagens/1.jpg",
@@ -175,35 +171,35 @@ const cards = [
   }
 ];
 
-function createThumbnails() {
-  cards.forEach((card, index) => {
-    const div = document.createElement('div');
-    div.classList.add('card-thumb');
-    div.style.backgroundImage = `url(${card.thumb})`;
-    div.title = card.title;
-    div.addEventListener('click', () => selectCard(index));
-    gallery.appendChild(div);
-  });
-}
+ function createThumbnails() {
+    cards.forEach((card, index) => {
+      const div = document.createElement('div');
+      div.classList.add('card-thumb');
+      div.style.backgroundImage = `url(${card.thumb})`;
+      div.title = card.title;
+      div.addEventListener('click', () => selectCard(index));
+      gallery.appendChild(div);
+    });
+  }
 
-function selectCard(index) {
-  document.querySelectorAll('.card-thumb').forEach(el => el.classList.remove('selected'));
-  const thumbs = document.querySelectorAll('.card-thumb');
-  thumbs[index].classList.add('selected');
+  function selectCard(index) {
+    document.querySelectorAll('.card-thumb').forEach(el => el.classList.remove('selected'));
+    const thumbs = document.querySelectorAll('.card-thumb');
+    thumbs[index].classList.add('selected');
 
-  previewImg.src = cards[index].full;
-  previewImg.alt = cards[index].title;
+    previewImg.src = cards[index].full;
+    previewImg.alt = cards[index].title;
 
-  // Atualiza o texto da preview
-  previewText.innerHTML = '';
-  cards[index].text.forEach(line => {
-    const h2 = document.createElement('h2');
-    h2.textContent = line;
-    previewText.appendChild(h2);
-  });
-}
+    previewText.innerHTML = '';
+    cards[index].text.forEach(line => {
+      const h2 = document.createElement('h2');
+      h2.textContent = line;
+      previewText.appendChild(h2);
+    });
+  }
 
-createThumbnails();
-selectCard(0);
+  // agora sim, depois que TUDO foi definido:
+  createThumbnails();
+  selectCard(0);
 
 });
